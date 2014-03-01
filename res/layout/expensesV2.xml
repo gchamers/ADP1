@@ -134,11 +134,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_column="2"
-                android:layout_gravity="fill_horizontal"
                 android:layout_row="1"
-                android:hint="@string/suggested_amount"
-                android:textAlignment="textEnd" /> />
-
+                android:gravity="center_vertical"
+                android:hint="@string/suggested_name"
+                android:textAlignment="textEnd" />
+   
             <TextView
                 android:id="@+id/growth_rate_tv"
                 android:layout_width="match_parent"
