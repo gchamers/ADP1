@@ -12,13 +12,15 @@
     <string name="share">Share</string>
     <string name="income">Income</string>
     <string name="retirement">Retirement</string>
-    <string name="life_insurance">Life Insurance</string>
+    <string name="life_insurance">Insurance</string>
     <string name="results">Results</string>
     <string name="expenses">Expenses</string>
     <string name="real_property">Real Property</string>
     <string name="help">Help</string>
     <string name="about">About</string>
+    <string name="advisors">Advisors</string>
     <string name="home">Home</string>
+    <string name="title">Expenses</string>
     <string name="create_new">Create New</string>
     <string name="delete">Delete</string>
     <string name="edit">Edit</string>
@@ -29,11 +31,31 @@
     <string name="growth_rate">Growth rate</string>
     <string name="begin_year">Begin year</string>
     <string name="end_year">End year</string>
-    <string name="suggested_name">John Doe</string>
+    <string name="recur_cycle">Recurs</string>
+    <string name="suggested_name">Utilities</string>
     <string name="suggested_amount">50000</string>
     <string name="suggested_growth_rate">3.00</string>
     <string name="suggested_begin_year">2014</string>
     <string name="suggested_end_year">2018</string>
-    <string name="home">Home</string>
-    <string name="edit">Edit</string>
-</resources>
+    <string name="suggested_recur_cycle">1</string>
+    <string name="grid_name">Name</string>
+    <string name="grid_amount">Amount</string>
+    <string name="grid_growth_rate">Growth</string>    
+    <string name="grid_begin_year">Begin</string> 
+    <string name="grid_end_year">End</string> 
+    <string name="grid_recur_cycle">Recurs</string> 
+<style name="ButtonText">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">#ffffff</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_margin">3dp</item>
+    <item name="android:textSize">10dp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:shadowColor">#000000</item>
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">2</item>
+</style>   
+
+    </resources>
