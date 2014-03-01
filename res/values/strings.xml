@@ -18,8 +18,10 @@
     <string name="real_property">Real Property</string>
     <string name="help">Help</string>
     <string name="about">About</string>
+    <string name="home">Home</string>
     <string name="create_new">Create New</string>
     <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
     <string name="name">Name</string>
