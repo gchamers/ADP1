@@ -13,7 +13,7 @@
 
     <TextView
         android:layout_gravity="left"
-        android:text="@string/hello_world" />
+        android:text="Hello World" />
 
     <Space
         android:layout_column="1"
