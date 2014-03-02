@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center" >
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp" >
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal" >
+        
+            <Button
+                android:id="@+id/home_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/home"
+                android:textAlignment="center"
+                android:textSize="12.5dp"
+                android:textStyle="normal"
+                android:typeface="normal" />
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:text="@string/save"
+                android:textAlign="center"
+                android:textAlignment="center"
+                android:textSize="12.5dp" />
+
+            <Button
+                android:id="@+id/edit_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:text="@string/edit"
+                android:textAlign="center"
+                android:textAlignment="center"
+                android:textSize="12.5dp" />
+
+            <Button
+                android:id="@+id/create_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="@string/create_new"
+                android:textAlign="center"
+                android:textAlignment="center"
+                android:textSize="12.5dp" />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:text="@string/cancel"
+                android:textAlign="center"
+                android:textAlignment="center"
+                android:textSize="12.5dp" />
+
+            <Button
+                android:id="@+id/delete_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:text="@string/delete"
+                android:textAlign="center"
+                android:textAlignment="center"
+                android:textSize="12.5dp" />
+        </GridLayout>
+    </ScrollView>
+    
+<TextView
+    android:id="@+id/title_about"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/scrollView1"
+    android:layout_marginLeft="15dp"
+	android:textSize="20sp"
+    android:text="@string/title_about"
+    android:textStyle="bold" />
+</TextView>
+
+<TextView
+    android:id="@+id/about_text"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/title_about"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+    android:textSize="12.5dp"
+    android:text="The American Dream Planner, LLC is a software application created to fill a void in existing products and a volatile estate tax code environment which continues to plague planners (and their clients) today.
+
+We believe we have not only met, but exceeded these goals."/>
+</TextView>
+</RelativeLayout>

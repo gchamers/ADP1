@@ -40,6 +40,7 @@
     <string name="title_real_property">Real Property</string>
     <string name="title_investments">Investments</string>
     <string name="title_retirement">Retirement</string>
+    <string name="title_about">About</string>
     <string name="title_personal_information">Personal information</string>
     <string name="create_new">Create New</string>
     <string name="delete">Delete</string>
@@ -85,4 +86,10 @@
     <string name="grid_begin_year">Begin</string> 
     <string name="grid_end_year">End</string> 
     <string name="grid_recur_cycle">Recurs</string>
+    <string name="about_text">The American Dream Planner, LLC is a software application 
+        created to fill a void in existing products and a volatile estate tax code 
+        environment which continues to plague planners today. 
+        We believe we have not only met, but exceeded these goals.</string>
+    
+    
     </resources>
