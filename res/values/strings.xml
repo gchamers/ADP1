@@ -20,11 +20,27 @@
     <string name="about">About</string>
     <string name="advisors">Advisors</string>
     <string name="home">Home</string>
+    <string name="client_name">Client Name</string>
+    <string name="client_preferred_first_name">Client first name</string>
+    <string name="spouse_name">Spouse Name</string>
+    <string name="spouse_preferred_first_name">Spouse first name</string>
+    <string name="client_street">Street</string>
+    <string name="client_city">City</string>
+    <string name="client_state">State</string>
+    <string name="client_zip">zip</string>
+    <string name="client_phone">phone</string>
+    <string name="client_email">email</string>
+    <string name="client_year_of_birth">Client birth year</string>
+    <string name="spouse_year_of_birth]">Spouse birth year</string>
+    <string name="beneficiary_name">Beneficiary name</string>
     <string name="title">Expenses</string>
     <string name="title_business">Business</string>
     <string name="title_income">Income</string>
     <string name="title_life_insurance">Life Insurance</string>
     <string name="title_real_property">Real Property</string>
+    <string name="title_investments">Investments</string>
+    <string name="title_retirement">Retirement</string>
+    <string name="title_personal_information">Personal information</string>
     <string name="create_new">Create New</string>
     <string name="delete">Delete</string>
     <string name="edit">Edit</string>
@@ -40,11 +56,13 @@
     <string name="begin_year">Begin year</string>
     <string name="end_year">End year</string>
     <string name="sell_yes_no">Sell Yes No</string>
+    <string name="retirement_withdrawal_rate">Rate of withdrawal</string>
     <string name="year_to_sell">Year to sell</string>
     <string name="recur_cycle">Recurs</string>
     <string name="life_insurance_death_benefit">Death benefit</string>
     <string name="life_insurance_premium">Premium</string>
     <string name="income_tax_rate">Tax rate</string>
+    <string name="retirement_begin_year_to_withdraw">Begin year to withdraw</string>
     <string name="suggested_name">Utilities</string>
     <string name="suggested_amount">50000</string>
     <string name="suggested_growth_rate">3.00</string>
@@ -58,12 +76,13 @@
     <string name="suggested_sell_yes_no">No</string>
     <string name="suggested_year_to_sell">2040</string>
     <string name="suggested_value">Purchase Price</string>
+    <string name="suggested_retirement_withdrawal_rate">5</string>
+    <string name="suggested_retirement_begin_year_to_withdraw">2030</string>
     <string name="grid_name">Name</string>
     <string name="grid_amount">Amount</string>
+    <string name="grid_value">Value</string
     <string name="grid_growth_rate">Growth</string>    
     <string name="grid_begin_year">Begin</string> 
     <string name="grid_end_year">End</string> 
-    <string name="grid_recur_cycle">Recurs</string> 
-
-
+    <string name="grid_recur_cycle">Recurs</string>
     </resources>

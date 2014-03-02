@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center" >
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp" >
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal" >
+        
+            <Button
+                android:id="@+id/home_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/home"
+                android:textAlignment="center"
+                android:textSize="12.5dp"
+                android:textStyle="normal"
+                android:typeface="normal" />
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:text="@string/save"
+                android:textAlign="center"
+                android:textAlignment="center"
+                android:textSize="12.5dp" />
+
+            <Button
+                android:id="@+id/edit_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:text="@string/edit"
+                android:textAlign="center"
+                android:textAlignment="center"
+                android:textSize="12.5dp" />
+
+            <Button
+                android:id="@+id/create_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="@string/create_new"
+                android:textAlign="center"
+                android:textAlignment="center"
+                android:textSize="12.5dp" />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:text="@string/cancel"
+                android:textAlign="center"
+                android:textAlignment="center"
+                android:textSize="12.5dp" />
+
+            <Button
+                android:id="@+id/delete_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:text="@string/delete"
+                android:textAlign="center"
+                android:textAlignment="center"
+                android:textSize="12.5dp" />
+        </GridLayout>
+    </ScrollView>
+    
+<TextView
+    android:id="@+id/title_personal_information"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/scrollView1"
+    android:layout_marginLeft="15dp"
+	android:textSize="20sp"
+    android:text="@string/title_personal_information"
+    android:textStyle="bold" 
+</TextView>
+
+    <ScrollView
+        android:id="@+id/new_input_sv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_personal_information"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="14dp" >
+
+        <GridLayout
+            android:id="@+id/new_input_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/client_name_tv"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:textSize="12.5dp"
+                android:text="@string/client_name" />
+
+            <EditText
+                android:id="@+id/client_name_et"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:textSize="12.5dp"
+                android:gravity="right"/>
+            
+            <TextView
+                android:id="@+id/client_preferred_first_name_tv"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:textSize="12.5dp"
+                android:text="@string/client_preferred_first_name" />
+
+            <EditText
+                android:id="@+id/client_preferred_first_name_et"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:textSize="12.5dp"
+                android:gravity="right"/>
+            
+            <TextView
+                android:id="@+id/spouse_name_tv"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:textSize="12.5dp"
+                android:text="@string/spouse_name" />
+
+            <EditText
+                android:id="@+id/spouse_name_et"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:textSize="12.5dp"
+                android:gravity="right"/>
+            
+            <TextView
+                android:id="@+id/spouse_preferred_first_name_tv"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:textSize="12.5dp"
+                android:text="@string/spouse_preferred_first_name" />
+
+            <EditText
+                android:id="@+id/spouse_preferred_first_name_et"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_row="3"
+                android:textSize="12.5dp"
+               android:gravity="right"/>
+
+            <TextView
+                android:id="@+id/client_year_of_birth_tv"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_row="4"
+                android:textSize="12.5dp"
+                android:text="@string/client_year_of_birth" />
+
+            <EditText
+                android:id="@+id/client_year_of_birth_et"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_row="4"
+                android:textSize="12.5dp"
+                android:gravity="right" />
+            
+            <TextView
+                android:id="@+id/client_street_tv"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_row="5"
+                android:textSize="12.5dp"
+                android:text="@string/client_street" />
+
+            <EditText
+                android:id="@+id/client_street_et"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_row="5"
+                android:textSize="12.5dp"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/client_city_tv"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_row="6"
+                android:textSize="12.5dp"
+                android:text="@string/client_city" />
+
+            <EditText
+                android:id="@+id/client_city_et"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:textSize="12.5dp"
+                android:layout_row="6"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/client_state_tv"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_row="7"
+                android:textSize="12.5dp"
+                android:text="@string/client_state" />
+
+            <EditText
+                android:id="@+id/client_state_et"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_row="7"
+                android:textSize="12.5dp" 
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/client_zip_tv"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_row="8"
+                android:textSize="12.5dp"
+                android:text="@string/client_zip" />
+
+            <EditText
+                android:id="@+id/client_zip_et"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:textSize="12.5dp"
+                android:layout_row="8"
+                android:gravity="right"  />
+            
+            <TextView
+                android:id="@+id/client_phone_tv"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_row="9"
+                android:textSize="12.5dp"
+                android:text="@string/client_phone" />
+
+            <EditText
+                android:id="@+id/client_phone_et"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:textSize="12.5dp"
+                android:layout_row="9"
+                android:gravity="right"  />
+            
+             <TextView
+                android:id="@+id/client_email_tv"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_row="10"
+                android:textSize="12.5dp"
+                android:text="@string/client_phone" />
+
+            <EditText
+                android:id="@+id/client_email_et"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:textSize="12.5dp"
+                android:layout_row="10"
+                android:gravity="right"  />
+           
+        </GridLayout>
+    </ScrollView>
+
+    
+</RelativeLayout>
