@@ -120,12 +120,12 @@
     <string name="nav_output_wealth_summary">Wealth summary</string>
       
     <string name="planning_choice_double_exemption">Double exemption (couples only)</string>
+    <string name="planning_choice_gift_business">Gifts business</string>
     <string name="planning_choice_gift_charity">Include gifts to charity</string>
     <string name="planning_choice_trust_insurance">Establish insurance trust</string>
     <string name="planning_choice_plan_noplan">Implement all planning choices</string>
     <string name="planning_choice_years_to_project">Years to project</string>
     <string name="planning_choice_discounts">Discounts</string>
-    <string name="planning_choice_gifts_business">Gifts business</string>
     <string name="planning_choice_trust_charitable_remainder">Trust Charitable Remainder</string>
     <string name="planning_choice_trust_charitable_lead">Trust Charitable Lead</string>
     <string name="planning_choice_trust_annuity">Trust annuity</string>
@@ -141,7 +141,7 @@
     <string name="suggested_advisor_phone">Advisor phone</string>
     <string name="suggested_advisor_email">Advisor email</string>
     <string name="suggested_client_name">Your name</string>
-    <string name="suggested_client_preferred_first_name">You preferred first name</string>
+    <string name="suggested_client_preferred_first_name">Preferred first name</string>
     <string name="suggested_client_street">Your Street</string>
     <string name="suggested_client_city">Your City</string>
     <string name="suggested_client_state">Your State</string>
@@ -150,7 +150,7 @@
     <string name="suggested_client_email">Your email</string>
     <string name="suggested_client_year_of_birth">Your birth year</string>
     <string name="suggested_spouse_name">Your spouse Name</string>
-    <string name="suggested_spouse_preferred_first_name">Your spouse first name</string>
+    <string name="suggested_spouse_preferred_first_name">Preferred first name</string>
     <string name="suggested_spouse_year_of_birth">Your spouse birth year</string>
     <string name="suggested_deduct_from">Joint Account</string>
     <string name="suggested_growth_rate">3.00</string>

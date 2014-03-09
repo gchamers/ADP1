@@ -116,7 +116,7 @@
             android:orientation="horizontal" >
 
             <TextView
-                android:id="@+id/name_tv"
+                android:id="@+id/item_name_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -125,7 +125,7 @@
                 android:text="@string/item_name" />
 
             <EditText
-                android:id="@+id/name_et"
+                android:id="@+id/item_name_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -135,7 +135,7 @@
                 android:gravity="right"/>
             
             <TextView
-                android:id="@+id/ownership_tv"
+                android:id="@+id/item_ownership_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -144,7 +144,7 @@
                 android:text="@string/item_ownership" />
 
             <EditText
-                android:id="@+id/ownership_et"
+                android:id="@+id/item_ownership_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -154,7 +154,7 @@
                 android:gravity="right"  />
 
             <TextView
-                android:id="@+id/value_tv"
+                android:id="@+id/item_value_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -163,7 +163,7 @@
                 android:text="@string/item_value" />
 
             <EditText
-                android:id="@+id/value_et"
+                android:id="@+id/item_value_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -173,7 +173,7 @@
                 android:gravity="right" />
             
             <TextView
-                android:id="@+id/growth_rate_tv"
+                android:id="@+id/item_growth_rate_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -182,7 +182,7 @@
                 android:text="@string/item_growth_rate" />
 
             <EditText
-                android:id="@+id/growth_rate_et"
+                android:id="@+id/item_growth_rate_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -192,7 +192,7 @@
                 android:gravity="right" />
 
             <TextView
-                android:id="@+id/begin_year_tv"
+                android:id="@+id/item_begin_year_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -201,7 +201,7 @@
                 android:text="@string/item_year_begin" />
 
             <EditText
-                android:id="@+id/begin_year_et"
+                android:id="@+id/item_begin_year_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -211,7 +211,7 @@
                 android:gravity="right" />
 
             <TextView
-                android:id="@+id/end_year_tv"
+                android:id="@+id/item_end_year_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -220,7 +220,7 @@
                 android:text="@string/item_year_end" />
 
             <EditText
-                android:id="@+id/end_year_et"
+                android:id="@+id/item_end_year_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
