@@ -6,8 +6,9 @@
     <string name="welcome">Welcome to the American Dream Planner</string>
     
     <string name="description_program">The American Dream Planner is financial, estate, legacy planning software to help you achieve your personal American Dream.</string>
-    <string name="description_about">The American Dream Planner was created to help you create your personal American Dream and to benefit from knowing the inter-relationship of your planning choices can affect the outcome.</string>
+    <string name="description_about">The American Dream Planner was created to help you build your personal American Dream and to benefit from knowing how your planning choices can affect the outcome.</string>
     <string name="description_advisors">There are advisors who can assist you in building your personal American Dream Planner.  Find them at our web site and then type their information here.</string>
+    <string name="description_scroll">Scroll to see more information and saved items</string>
     
     <string name="contact_info_advisor_name">Name</string>
     <string name="contact_info_advisor_street">Street</string>
@@ -78,7 +79,7 @@
     <string name="menu_delete">Delete</string>
     <string name="menu_edit">Edit Existing</string>
     <string name="menu_save_session">Session Save</string>
-    <string name="menu_save_to_database">Full Save</string>
+    <string name="menu_save_to_database">Save</string>
     <string name="menu_save_as_scenario">Scenario Save</string>
     <string name="menu_open_client">Open client</string>
     <string name="menu_scenario_view">Scenario view</string>
