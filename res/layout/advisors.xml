@@ -5,7 +5,7 @@
     android:textAlignment="center" >
     
     <ScrollView
-        android:id="@+id/scrollView1"
+        android:id="@+id/input_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -16,79 +16,91 @@
             android:layout_height="wrap_content"
             android:columnCount="3"
             android:orientation="horizontal" >
-        
+
             <Button
-                android:id="@+id/home_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_create_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
                 android:layout_column="0"
                 android:layout_row="0"
-                android:text="@string/nav_home"
-                android:textAlignment="center"
-                android:textSize="12sp" />
-
-            <Button
-                android:id="@+id/save_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_column="1"
-                android:layout_row="0"
-                android:text="@string/menu_save"
-                android:textAlign="center"
-                android:textAlignment="center"
-                android:textSize="12sp" />
-
-            <Button
-                android:id="@+id/edit_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_column="2"
-                android:layout_row="0"
-                android:text="@string/menu_edit"
-                android:textAlignment="center"
-                android:textSize="12sp" />
-
-            <Button
-                android:id="@+id/create_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_column="0"
-                android:layout_row="1"
                 android:text="@string/menu_create_new"
                 android:textAlignment="center"
                 android:textSize="12sp" />
 
             <Button
-                android:id="@+id/cancel_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_cancel_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
                 android:layout_column="1"
-                android:layout_row="1"
+                android:layout_row="0"
                 android:text="@string/menu_cancel"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+            
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_delete_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:text="@string/menu_delete"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+            
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_edit_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="@string/menu_edit"
                 android:textAlignment="center"
                 android:textSize="12sp" />
 
             <Button
-                android:id="@+id/delete_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_column="2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_save_to_database_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
                 android:layout_row="1"
-                android:text="@string/menu_delete"
+                android:text="@string/menu_save_to_database"
+                android:textAlign="center"
                 android:textAlignment="center"
                 android:textSize="12sp" />
+        
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/nav_input_home_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:text="@string/nav_input_home"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+     
         </GridLayout>
     </ScrollView>
+
     
 <TextView
     android:id="@+id/title_advisors"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_below="@+id/scrollView1"
     android:layout_marginLeft="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_below="@+id/input_menu"
 	android:textSize="20sp"
     android:text="@string/title_advisors"
     android:textStyle="bold" 
+</TextView>
+    
+ 
 </TextView>
 <TextView
 	android:id="@+id/description_advisors"
@@ -118,16 +130,16 @@
             android:orientation="horizontal" >
   
             <TextView
-                android:id="@+id/advisor_name_tv"
+                android:id="@+id/contact_info_advisor_name_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_row="0"
                 android:textSize="12sp"
-                android:text="@string/advisor_name" />
+                android:text="@string/contact_info_advisor_name" />
 
             <EditText
-                android:id="@+id/advisor_name_et"
+                android:id="@+id/contact_info_advisor_name_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -138,16 +150,16 @@
  
            
             <TextView
-                android:id="@+id/advisor_street_tv"
+                android:id="@+id/contact_info_advisor_street_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_row="5"
                 android:textSize="12sp"
-                android:text="@string/advisor_street" />
+                android:text="@string/contact_info_advisor_street" />
 
             <EditText
-                android:id="@+id/advisor_street_et"
+                android:id="@+id/contact_info_advisor_street_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -157,16 +169,16 @@
                 android:gravity="right" />
 
             <TextView
-                android:id="@+id/advisor_city_tv"
+                android:id="@+id/contact_info_advisor_city_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_row="6"
                 android:textSize="12sp"
-                android:text="@string/advisor_city" />
+                android:text="@string/contact_info_advisor_city" />
 
             <EditText
-                android:id="@+id/advisor_city_et"
+                android:id="@+id/contact_info_advisor_city_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -176,16 +188,16 @@
                 android:gravity="right" />
 
             <TextView
-                android:id="@+id/advisor_state_tv"
+                android:id="@+id/contact_info_advisor_state_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_row="7"
                 android:textSize="12sp"
-                android:text="@string/advisor_state" />
+                android:text="@string/contact_info_advisor_state" />
 
             <EditText
-                android:id="@+id/advisor_state_et"
+                android:id="@+id/contact_info_advisor_state_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -195,16 +207,16 @@
                 android:gravity="right" />
 
             <TextView
-                android:id="@+id/advisor_zip_tv"
+                android:id="@+id/contact_info_advisor_zip_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_row="8"
                 android:textSize="12sp"
-                android:text="@string/advisor_zip" />
+                android:text="@string/contact_info_advisor_zip" />
 
             <EditText
-                android:id="@+id/advisor_zip_et"
+                android:id="@+id/contact_info_advisor_zip_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -214,16 +226,16 @@
                 android:gravity="right"  />
             
             <TextView
-                android:id="@+id/advisor_phone_tv"
+                android:id="@+id/contact_info_advisor_phone_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_row="9"
                 android:textSize="12sp"
-                android:text="@string/advisor_phone" />
+                android:text="@string/contact_info_advisor_phone" />
 
             <EditText
-                android:id="@+id/advisor_phone_et"
+                android:id="@+id/contact_info_advisor_phone_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -234,16 +246,16 @@
                 android:textSize="12sp" />
             
              <TextView
-                android:id="@+id/advisor_email_tv"
+                android:id="@+id/contact_info_advisor_email_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_row="10"
                 android:textSize="12sp"
-                android:text="@string/advisor_email" />
+                android:text="@string/contact_info_advisor_email" />
 
             <EditText
-                android:id="@+id/advisor_email_et"
+                android:id="@+id/contact_info_advisor_email_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"

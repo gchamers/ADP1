@@ -5,7 +5,7 @@
     android:textAlignment="center" >
     
     <ScrollView
-        android:id="@+id/scrollView1"
+        android:id="@+id/input_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -16,67 +16,74 @@
             android:layout_height="wrap_content"
             android:columnCount="3"
             android:orientation="horizontal" >
-        
+
             <Button
-                android:id="@+id/home_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_create_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
                 android:layout_column="0"
                 android:layout_row="0"
-                android:text="@string/nav_home"
-                android:textAlignment="center"
-                android:textSize="12sp" />
-
-            <Button
-                android:id="@+id/save_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_column="1"
-                android:layout_row="0"
-                android:text="@string/menu_save"
-                android:textAlign="center"
-                android:textAlignment="center"
-                android:textSize="12sp" />
-
-            <Button
-                android:id="@+id/edit_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_column="2"
-                android:layout_row="0"
-                android:text="@string/menu_edit"
-                android:textAlignment="center"
-                android:textSize="12sp" />
-
-            <Button
-                android:id="@+id/create_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_column="0"
-                android:layout_row="1"
                 android:text="@string/menu_create_new"
                 android:textAlignment="center"
                 android:textSize="12sp" />
 
             <Button
-                android:id="@+id/cancel_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_cancel_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
                 android:layout_column="1"
-                android:layout_row="1"
+                android:layout_row="0"
                 android:text="@string/menu_cancel"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+            
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_delete_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:text="@string/menu_delete"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+            
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_edit_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="@string/menu_edit"
                 android:textAlignment="center"
                 android:textSize="12sp" />
 
             <Button
-                android:id="@+id/delete_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_column="2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_save_to_database_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
                 android:layout_row="1"
-                android:text="@string/menu_delete"
+                android:text="@string/menu_save_to_database"
+                android:textAlign="center"
                 android:textAlignment="center"
                 android:textSize="12sp" />
+        
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/nav_input_home_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:text="@string/nav_input_home"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+     
         </GridLayout>
     </ScrollView>
     
@@ -84,11 +91,13 @@
     android:id="@+id/title_expenses"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_below="@+id/scrollView1"
+    android:layout_below="@+id/input_menu"
     android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
 	android:textSize="20sp"
     android:text="@string/title_expenses"
-    android:textStyle="bold" 
+    android:textStyle="bold" /> 
 </TextView>
 
     <ScrollView

@@ -4,8 +4,8 @@
     android:layout_height="match_parent"
     android:textAlignment="center" >
     
-    <ScrollView
-        android:id="@+id/scrollView1"
+   <ScrollView
+        android:id="@+id/input_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -16,67 +16,74 @@
             android:layout_height="wrap_content"
             android:columnCount="3"
             android:orientation="horizontal" >
-        
+
             <Button
-                android:id="@+id/home_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_create_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
                 android:layout_column="0"
                 android:layout_row="0"
-                android:text="@string/nav_home"
-                android:textAlignment="center"
-                android:textSize="12sp" />
-
-            <Button
-                android:id="@+id/save_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_column="1"
-                android:layout_row="0"
-                android:text="@string/menu_save"
-                android:textAlign="center"
-                android:textAlignment="center"
-                android:textSize="12sp" />
-
-            <Button
-                android:id="@+id/edit_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_column="2"
-                android:layout_row="0"
-                android:text="@string/menu_edit"
-                android:textAlignment="center"
-                android:textSize="12sp" />
-
-            <Button
-                android:id="@+id/create_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_column="0"
-                android:layout_row="1"
                 android:text="@string/menu_create_new"
                 android:textAlignment="center"
                 android:textSize="12sp" />
 
             <Button
-                android:id="@+id/cancel_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_cancel_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
                 android:layout_column="1"
-                android:layout_row="1"
+                android:layout_row="0"
                 android:text="@string/menu_cancel"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+            
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_delete_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:text="@string/menu_delete"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+            
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_edit_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="@string/menu_edit"
                 android:textAlignment="center"
                 android:textSize="12sp" />
 
             <Button
-                android:id="@+id/delete_btn"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_column="2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/menu_save_to_database_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
                 android:layout_row="1"
-                android:text="@string/menu_delete"
+                android:text="@string/menu_save_to_database"
+                android:textAlign="center"
                 android:textAlignment="center"
                 android:textSize="12sp" />
+        
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/nav_input_home_btn"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:text="@string/nav_input_home"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+     
         </GridLayout>
     </ScrollView>
     
@@ -84,11 +91,13 @@
     android:id="@+id/title_retirement"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_below="@+id/scrollView1"
+    android:layout_below="@+id/input_menu"
     android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
 	android:textSize="20sp"
     android:text="@string/title_retirement"
-    android:textStyle="bold" 
+    android:textStyle="bold" /> 
 </TextView>
 
     <ScrollView
@@ -107,7 +116,7 @@
             android:orientation="horizontal" >
 
             <TextView
-                android:id="@+id/name_tv"
+                android:id="@+id/item_name_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -116,7 +125,7 @@
                 android:text="@string/item_name" />
 
             <EditText
-                android:id="@+id/name_et"
+                android:id="@+id/item_name_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -126,7 +135,7 @@
                 android:gravity="right"/>
             
             <TextView
-                android:id="@+id/ownership_tv"
+                android:id="@+id/item_ownership_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -135,7 +144,7 @@
                 android:text="@string/item_ownership" />
 
             <EditText
-                android:id="@+id/ownership_et"
+                android:id="@+id/item_ownership_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -145,7 +154,7 @@
                 android:gravity="right"  />
 
             <TextView
-                android:id="@+id/value_tv"
+                android:id="@+id/item_value_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -154,7 +163,7 @@
                 android:text="@string/item_value" />
 
             <EditText
-                android:id="@+id/value_et"
+                android:id="@+id/item_value_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -164,7 +173,7 @@
                 android:gravity="right" />
             
             <TextView
-                android:id="@+id/growth_rate_tv"
+                android:id="@+id/item_growth_rate_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -173,7 +182,7 @@
                 android:text="@string/item_growth_rate" />
 
             <EditText
-                android:id="@+id/growth_rate_et"
+                android:id="@+id/item_growth_rate_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -183,7 +192,7 @@
                 android:gravity="right" />
 
             <TextView
-                android:id="@+id/begin_year_tv"
+                android:id="@+id/item_begin_year_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -192,7 +201,7 @@
                 android:text="@string/item_year_begin" />
 
             <EditText
-                android:id="@+id/begin_year_et"
+                android:id="@+id/item_begin_year_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -202,16 +211,16 @@
                 android:gravity="right" />
             
             <TextView
-                android:id="@+id/retirement_year_begin_to_withdraw_tv"
+                android:id="@+id/item_retirement_year_begin_to_withdraw_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_row="5"
                 android:textSize="12sp"
-                android:text="@string/retirement_year_begin_to_withdraw" />
+                android:text="@string/item_retirement_year_begin_to_withdraw" />
 
             <EditText
-                android:id="@+id/retirement_begin_year_to_withdraw_et"
+                android:id="@+id/item_retirement_begin_year_to_withdraw_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -221,16 +230,16 @@
                 android:gravity="right"  />
 
             <TextView
-                android:id="@+id/retirement_withdrawal_rate_tv"
+                android:id="@+id/item_retirement_withdrawal_rate_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_row="6"
                 android:textSize="12sp"
-                android:text="@string/retirement_withdrawal_rate" />
+                android:text="@string/item_retirement_withdrawal_rate" />
 
             <EditText
-                android:id="@+id/retirement_withdrawal_rate_et"
+                android:id="@+id/item_retirement_withdrawal_rate_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -240,7 +249,7 @@
                 android:gravity="right"  />
             
             <TextView
-                android:id="@+id/income_tax_rate_tv"
+                android:id="@+id/item_income_tax_rate_tv"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -249,7 +258,7 @@
                 android:text="@string/item_income_tax_rate" />
 
             <EditText
-                android:id="@+id/income_tax_rate_et"
+                android:id="@+id/item_income_tax_rate_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
@@ -268,7 +277,7 @@
                 android:text="@string/item_add_to" />
 
             <EditText
-                android:id="@+id/add_to_et"
+                android:id="@+id/item_add_to_et"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_column="2"
