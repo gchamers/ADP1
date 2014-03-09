@@ -8,8 +8,7 @@
         android:id="@+id/input_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="10dp" >
+        android:layout_alignParentLeft="true" >
 
         <GridLayout
             android:layout_width="fill_parent"
@@ -88,7 +87,7 @@
     </ScrollView>
     
 <TextView
-    android:id="@+id/title_about"
+    android:id="@+id/title_share"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_below="@+id/input_menu"
@@ -96,18 +95,18 @@
     android:layout_marginRight="15dp"
     android:layout_marginTop="15dp"
 	android:textSize="20sp"
-    android:text="@string/title_about"
+    android:text="@string/title_share"
     android:textStyle="bold" />
 
 <TextView
     android:id="@+id/description_about"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_below="@+id/title_about"
+    android:layout_below="@+id/title_share"
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp"
     android:layout_marginTop="15dp"
 	android:textSize="12sp"
-    android:text="@string/description_about" />
+    android:text="@string/description_share" />
 
 </RelativeLayout>
