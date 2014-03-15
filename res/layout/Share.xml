@@ -24,7 +24,7 @@
                 android:layout_column="0"
                 android:layout_row="0"
                 android:text="@string/menu_create_new"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="12sp" />
 
             <Button
@@ -35,7 +35,7 @@
                 android:layout_column="1"
                 android:layout_row="0"
                 android:text="@string/menu_cancel"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="12sp" />
             
             <Button
@@ -46,7 +46,7 @@
                 android:layout_column="2"
                 android:layout_row="0"
                 android:text="@string/menu_delete"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="12sp" />
             
             <Button
@@ -57,7 +57,7 @@
                 android:layout_column="0"
                 android:layout_row="1"
                 android:text="@string/menu_edit"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="12sp" />
 
             <Button
@@ -69,7 +69,7 @@
                 android:layout_row="1"
                 android:text="@string/menu_save_to_database"
                 android:textAlign="center"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="12sp" />
         
             <Button
@@ -80,7 +80,7 @@
                 android:layout_column="2"
                 android:layout_row="1"
                 android:text="@string/nav_input_home"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="12sp" />
      
         </GridLayout>
@@ -96,6 +96,7 @@
     android:layout_marginTop="15dp"
 	android:textSize="20sp"
     android:text="@string/title_share"
+    android:gravity="left"
     android:textStyle="bold" />
 
 <TextView
@@ -107,6 +108,7 @@
     android:layout_marginRight="15dp"
     android:layout_marginTop="15dp"
 	android:textSize="12sp"
-    android:text="@string/description_share" />
+    android:text="@string/description_share" 
+    android:gravity="left"/>
 
 </RelativeLayout>
