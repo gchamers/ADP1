@@ -9,13 +9,6 @@
     <string name="description_about">The American Dream Planner was created to help you build your personal American Dream and to benefit from knowing how your planning choices can affect the outcome.</string>
     <string name="description_advisors">There are advisors who can assist you in building your personal American Dream Planner.  Find them at our web site and then type their information here.</string>
     <string name="description_scroll">Scroll to see more information and saved items</string>
-    <string name="description_share">Export your information is currently under construction</string>
-    <string name="description_results">Under construction</string>
-    <string name="description_results_pie_charts">Pie charts here</string>
-    <string name="description_results_line_charts">Line charts here</string>
-    <string name="description_results_bar_charts">Bar charts here</string>
-    <string name="description_results_scroll">Scroll to see results in bar/line/bar/tabular views</string>
-    <string name="description_results_tabular_charts">Tabular charts here</string>
     
     <string name="contact_info_advisor_name">Name</string>
     <string name="contact_info_advisor_street">Street</string>
@@ -115,11 +108,12 @@
     <string name="nav_output_gift_accounts">Gift accounts</string>
     <string name="nav_output_gift_beneficiaries">Gift beneficiaries</string>
     <string name="nav_output_income">Income</string>
-    <string name="nav_output_liquid_accounts">Liquid accounts</string>
-    <string name="nav_output_liquid _accounts_by_type">Liquid accounts by type</string>
+    <string name="nav_output_investments">Investments</string>
+    <string name="nav_output_investments_by_type">Investments by type</string>
     <string name="nav_output_monte-carlo">Monte Carlo</string> 
     <string name="nav_output_net_worth">Net worth</string> 
     <string name="nav_output_real_property">Real Property</string>
+    <string name="nav_output_retirement">Retirement</string>
     <string name="nav_output_stock_options">Stock options</string>
     <string name="nav_output_tax_and_inheritance">Tax and inheritance</string>
     <string name="nav_output_trusts">Trusts</string>
@@ -240,9 +234,8 @@
     <string name="title_personal_information">Personal information</string>
     <string name="title_planning_choices">Planning choices</string>
     <string name="title_real_property">Real Property</string>
-    <string name="title_results">Results</string>
+    <string name="title_reports">Reports</string>
     <string name="title_retirement">Retirement</string>
-    <string name="title_share">Share information</string>
     <string name="title_spouse_name">Spouse information</string>
     
     </resources>

@@ -7,32 +7,44 @@
     android:shrinkColumns="*"
     android:stretchColumns="*"
     
+    <TextView
+    android:id="@+id/ttitle_reports"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+	android:textSize="20sp"
+    android:text="@string/title_reports"
+    android:textStyle="bold" />
+    
     <TableRow
         android:id="@+id/navTableRow1"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
-
+        
         <Button
-            android:id="@+id/nav_input_personal_btn"
+		        android:id="@+id/nav_input_home_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_input_home"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:typeface="normal"
+                style="?android:attr/buttonBarButtonStyle"/>
+       <Button
+            android:id="@+id/nav_output_business_btn"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="@string/nav_input_personal"
+            android:text="@string/nav_output_business"
             android:textAlignment="center"
             android:textSize="12sp"
             android:textStyle="normal"
             android:typeface="normal" />
 
-         <Button
-		        android:id="@+id/nav_input_income_btn"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="@string/nav_input_income"
-                android:textAlignment="center"
-                android:textSize="12sp"
-                android:textStyle="normal"
-                android:typeface="normal" 
-                style="?android:attr/buttonBarButtonStyle"/>
+        
     </TableRow>
     <TableRow
         android:id="@+id/NavTableRow2"
@@ -40,75 +52,80 @@
         android:layout_width="match_parent">
        
         <Button
-		        android:id="@+id/nav_input_plan_choices_btn"
+		        android:id="@+id/nav_output_net_worth_btn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="@string/nav_input_plan_choices"
+                android:text="@string/nav_output_net_worth"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:typeface="normal"
+                style="?android:attr/buttonBarButtonStyle"/>
+        <Button
+		        android:id="@+id/nav_output_expenses_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_output_expenses"
                 android:textAlignment="center"
                 android:textSize="12sp"
                 android:textStyle="normal"
                 android:typeface="normal" 
                 style="?android:attr/buttonBarButtonStyle"/>
-		 <Button
-		        android:id="@+id/nav_input_expenses_btn"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="@string/nav_input_expenses"
-                android:textAlignment="center"
-                android:textSize="12sp"
-                android:textStyle="normal"
-                android:typeface="normal"
-				style="?android:attr/buttonBarButtonStyle"/>
+		 
 	</TableRow>
     <TableRow
         android:id="@+id/navTableRow3"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
+		     
 		     <Button
-		        android:id="@+id/nav_input_results_btn"
+		        android:id="@+id/nav_output_flow_chart_btn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="@string/nav_input_results"
+                android:text="@string/nav_output_flow_chart"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:typeface="normal" 
+                style="?android:attr/buttonBarButtonStyle"/>
+		     <Button
+		        android:id="@+id/nav_output_income_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_output_income"
                 android:textAlignment="center"
                 android:textSize="12sp"
                 android:textStyle="normal"
                 android:typeface="normal"
-                style="?android:attr/buttonBarButtonStyle"/>
-		    <Button
-		        android:id="@+id/nav_input_Investments_btn"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="@string/nav_input_investments"
-                android:textAlignment="center"
-                android:textSize="12sp"
-                android:textStyle="normal"
-                android:typeface="normal"
-                style="?android:attr/buttonBarButtonStyle"/>
+				style="?android:attr/buttonBarButtonStyle"/>
+		    
 	</TableRow>
     <TableRow
         android:id="@+id/NavTableRow4"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
+		   
 		    <Button
-		        android:id="@+id/nav_input_share_btn"
+		        android:id="@+id/nav_output_tax_and_inheritance_btn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="@string/nav_input_share"
+                android:text="@string/nav_output_tax_and_inheritance"
                 android:textAlignment="center"
                 android:textSize="12sp"
                 android:textStyle="normal"
                 android:typeface="normal"
                 style="?android:attr/buttonBarButtonStyle"/>
 		    <Button
-		        android:id="@+id/nav_input_retirement_btn"
+		        android:id="@+id/nav_output_investments_btn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="@string/nav_input_retirement"
+                android:text="@string/nav_output_investments"
                 android:textAlignment="center"
                 android:textSize="12sp"
                 android:textStyle="normal"
                 android:typeface="normal"
                 style="?android:attr/buttonBarButtonStyle"/>
+		    
 	</TableRow>
     <TableRow
         android:id="@+id/NavTableRow5"
@@ -125,10 +142,10 @@
                 android:typeface="normal"
                 style="?android:attr/buttonBarButtonStyle"/>
 		    <Button
-		        android:id="@+id/nav_input_real_property_btn"
+		        android:id="@+id/nav_output_investments_by_type_btn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="@string/nav_input_real_property"
+                android:text="@string/nav_output_investments_by_type"
                 android:textAlignment="center"
                 android:textSize="12sp"
                 android:textStyle="normal"
@@ -140,50 +157,50 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
 		    <Button
-		        android:id="@+id/nav_input_about_btn"
+		        android:id="@+id/nav_output_stock_options_btn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="@string/nav_input_about"
+                android:text=""
                 android:textAlignment="center"
                 android:textSize="12sp"
                 android:textStyle="normal"
                 android:typeface="normal"
                 style="?android:attr/buttonBarButtonStyle"/>
-		    <Button
-		        android:id="@+id/nav_input_business_btn"
+		     <Button
+		        android:id="@+id/nav_output_real_property_btn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="@string/nav_input_business"
+                android:text="@string/nav_output_real_property"
                 android:textAlignment="center"
                 android:textSize="12sp"
                 android:textStyle="normal"
-                android:typeface="normal" 
+                android:typeface="normal"
                 style="?android:attr/buttonBarButtonStyle"/>
+		    
 	</TableRow>
     <TableRow
         android:id="@+id/NavTableRow7"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
 		    <Button
-		        android:id="@+id/nav_input_advisors_btn"
+		        android:id="@+id/nav_output_gift_accounts_btn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="@string/nav_input_advisors"
+                android:text=""
                 android:textAlignment="center"
                 android:textSize="12sp"
                 android:textStyle="normal"
                 android:typeface="normal"
                 style="?android:attr/buttonBarButtonStyle"/>
-		    <Button
-		        android:id="@+id/nav_input_life_insurance_btn"
+		     <Button
+		        android:id="@+id/nav_output_retirement_btn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="@string/nav_input_life_insurance"
+                android:text="@string/nav_output_retirement"
                 android:textAlignment="center"
                 android:textSize="12sp"
                 android:textStyle="normal"
                 android:typeface="normal"
                 style="?android:attr/buttonBarButtonStyle"/>
-        </TableRow>
  
 </TableLayout

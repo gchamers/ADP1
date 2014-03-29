@@ -8,7 +8,7 @@
         android:id="@+id/input_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true">
+        android:layout_alignParentLeft="true" >
 
         <GridLayout
             android:layout_width="fill_parent"
@@ -24,7 +24,7 @@
                 android:layout_column="0"
                 android:layout_row="0"
                 android:text="@string/menu_create_new"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="12sp" />
 
             <Button
@@ -35,7 +35,7 @@
                 android:layout_column="1"
                 android:layout_row="0"
                 android:text="@string/menu_cancel"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="12sp" />
             
             <Button
@@ -46,7 +46,7 @@
                 android:layout_column="2"
                 android:layout_row="0"
                 android:text="@string/menu_delete"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="12sp" />
             
             <Button
@@ -57,7 +57,7 @@
                 android:layout_column="0"
                 android:layout_row="1"
                 android:text="@string/menu_edit"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="12sp" />
 
             <Button
@@ -69,7 +69,7 @@
                 android:layout_row="1"
                 android:text="@string/menu_save_to_database"
                 android:textAlign="center"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="12sp" />
         
             <Button
@@ -80,7 +80,7 @@
                 android:layout_column="2"
                 android:layout_row="1"
                 android:text="@string/nav_input_home"
-                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="12sp" />
      
         </GridLayout>
@@ -180,14 +180,14 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="15dp"
                 android:textSize="12sp"
-                android:text="@string/planning_choice_years_to_project" />
+                android:text="@string/planning_choice_years_to_project"
+                android:gravity="left" />
 
             <EditText
                 android:id="@+id/planning_choice_years_to_project_et"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-
                 android:textSize="12sp"
                 android:hint="@string/suggested_years_to_project"
                 android:gravity="right"/>
