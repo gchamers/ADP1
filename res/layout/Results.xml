@@ -87,7 +87,7 @@
     </ScrollView>
     
 <TextView
-    android:id="@+id/title_about"
+    android:id="@+id/title_results"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_below="@+id/input_menu"
@@ -95,39 +95,70 @@
     android:layout_marginRight="15dp"
     android:layout_marginTop="15dp"
 	android:textSize="20sp"
-    android:text="@string/title_about"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 94df8a7d14552e700e86fc7f25134e9aedd3a9a7
+    android:text="@string/title_results"
     android:textStyle="bold" 
     android:gravity="left"/>
 
-=======
-    android:textStyle="bold" />
-</TextView>
->>>>>>> parent of 8d19c7c... 03-09-2014-2
 <TextView
-    android:id="@+id/description_about"
+    android:id="@+id/description_results_scroll"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_below="@+id/title_about"
+    android:layout_below="@+id/title_results"
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp"
     android:layout_marginTop="15dp"
 	android:textSize="12sp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-    android:text="@string/description_about"
+    android:text="@string/description_results_scroll"
+    android:gravity="left"/>
+
+<TextView
+    android:id="@+id/description_results_pie_charts"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/description_results_scroll"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+	android:textSize="12sp"
+    android:text="@string/description_results_pie_charts" 
+    android:gravity="left"/>
+
+<TextView
+    android:id="@+id/description_results_line_charts"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/description_results_pie_charts"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+	android:textSize="12sp"
+    android:text="@string/description_results_line_charts"
     android:gravity="left" />
-=======
-    android:text="@string/description_about" />
-</TextView>
-</TextView>
->>>>>>> parent of 8d19c7c... 03-09-2014-2
-=======
-    android:text="@string/description_about"
+
+
+<TextView
+    android:id="@+id/description_results_bar_charts"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/description_results_line_charts"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+	android:textSize="12sp"
+    android:text="@string/description_results_bar_charts" 
+    android:gravity="left"/>
+
+
+<TextView
+    android:id="@+id/description_results_tabular_charts"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/description_results_bar_charts"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+	android:textSize="12sp"
+    android:text="@string/description_results_tabular_charts"
     android:gravity="left" />
->>>>>>> 94df8a7d14552e700e86fc7f25134e9aedd3a9a7
 
 </RelativeLayout>
